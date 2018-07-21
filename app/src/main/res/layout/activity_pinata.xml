@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green_background"
+    tools:context="com.example.openstack.magic.Pinata">
+
+    <ImageView
+        android:id="@+id/pinata_image"
+        android:layout_width="364dp"
+        android:layout_height="364dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/roll_prize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pinata" />
+
+    <TextView
+        android:id="@+id/pinata_life"
+        android:layout_width="64dp"
+        android:layout_height="58dp"
+        android:background="@drawable/circle_button"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#446402"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/roll_prize"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinata_image"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/roll_prize"
+        android:layout_width="211dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_2"
+        android:fadingEdge="horizontal|vertical"
+        android:onClick="pinata_prize"
+        android:text="@string/roll_prize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinata_image" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="180dp"
+        android:layout_height="374dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="1dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="decrease_life"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/plus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/pinata_image"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="180dp"
+        android:layout_height="372dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="increase_life"
+        app:layout_constraintEnd_toEndOf="@+id/pinata_image"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/minus_text"
+        android:layout_width="17dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/minus_text"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus_text"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/plus_text"
+        android:layout_width="23dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/plus_text"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Magic: The Gathering</string>
+
+    <string name="title">Magic: The Gathering</string>
+    <string name="pinata">Piñata</string>
+    <string name="planechase">Planechase</string>
+    <string name="help">Help</string>
+    <string name="roll_prize">Roll Prize</string>
+    <string name="ok">OK!</string>
+    <string name="minus_text">-</string>
+    <string name="plus_text">+</string>
+
+    <string name="roll">Roll</string>
+    <string name="planeswalk">Planeswalk!</string>
+    <string name="default_title_plan">Minamo - Kamigawa</string>
+    <string name="default_effect_plan">Whenever a player casts a spell, that player may draw a card.</string>
+    <string name="default_chaos_plan">Whenever you roll chaos, each player may return a blue card from his or her graveyard to his or her hand.</string>
+
+    <string name="roll_costs">Pay 0 mana to roll.</string>
+    <string name="Reroll">Reroll</string>
+
+</resources>
